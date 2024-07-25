@@ -164,8 +164,13 @@
       <configSetting altId="p207.input" configurationId="p207"/>
       <configSetting altId="p313.input" configurationId="p313"/>
       <configSetting altId="p315.input" configurationId="p315"/>
+      <configSetting altId="p506.input" configurationId="p506"/>
+      <configSetting altId="p507.input" configurationId="p507"/>
+      <configSetting altId="p508.input" configurationId="p508"/>
+      <configSetting altId="p510.input" configurationId="p510"/>
       <configSetting altId="p514.input" configurationId="p514"/>
       <configSetting altId="p515.input" configurationId="p515"/>
+      <configSetting altId="p606.input" configurationId="p606"/>
       <configSetting altId="p607.input" configurationId="p607"/>
       <configSetting altId="p711.input" configurationId="p711"/>
       <configSetting altId="p712.input" configurationId="p712"/>
@@ -180,6 +185,8 @@
       <configSetting altId="p910.input" configurationId="p910"/>
       <configSetting altId="pa00.input" configurationId="pa00"/>
       <configSetting altId="pa01.input" configurationId="pa01"/>
+      <configSetting altId="pa03.input" configurationId="pa03"/>
+      <configSetting altId="pa04.input" configurationId="pa04"/>
       <configSetting altId="pa05.input" configurationId="pa05"/>
       <configSetting altId="pb02.input" configurationId="pb02"/>
       <configSetting altId="pb03.input" configurationId="pb03"/>

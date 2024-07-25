@@ -309,14 +309,22 @@
   </raModuleConfiguration>
   <raPinConfiguration>
     <symbolicName propertyId="p207.symbolic_name" value="BOTAO_1"/>
+    <symbolicName propertyId="p402.symbolic_name" value="RTC0"/>
+    <symbolicName propertyId="p404.symbolic_name" value="RTC2"/>
+    <symbolicName propertyId="p506.symbolic_name" value="Drive1_Status"/>
+    <symbolicName propertyId="p507.symbolic_name" value="Drive1_I0"/>
+    <symbolicName propertyId="p508.symbolic_name" value="Drive1_Slew"/>
     <symbolicName propertyId="p511.symbolic_name" value="EXTERNAL_IR"/>
     <symbolicName propertyId="p514.symbolic_name" value="GPIO_0"/>
     <symbolicName propertyId="p515.symbolic_name" value="GPIO_1"/>
+    <symbolicName propertyId="p606.symbolic_name" value="Drive1_INV"/>
+    <symbolicName propertyId="p607.symbolic_name" value="Mosfet3"/>
     <symbolicName propertyId="p709.symbolic_name" value="IRQ1"/>
     <symbolicName propertyId="p711.symbolic_name" value="LED_7"/>
     <symbolicName propertyId="p712.symbolic_name" value="LED_6"/>
     <symbolicName propertyId="p713.symbolic_name" value="LED_5"/>
     <symbolicName propertyId="p807.symbolic_name" value="GPIO_2"/>
+    <symbolicName propertyId="p813.symbolic_name" value="Mosfet4"/>
     <symbolicName propertyId="p900.symbolic_name" value="Drive0_I0"/>
     <symbolicName propertyId="p901.symbolic_name" value="Drive0_I1"/>
     <symbolicName propertyId="p902.symbolic_name" value="Drive0_Slew"/>
@@ -328,6 +336,11 @@
     <symbolicName propertyId="p911.symbolic_name" value="PWM_1"/>
     <symbolicName propertyId="p912.symbolic_name" value="PWM_2"/>
     <symbolicName propertyId="p914.symbolic_name" value="PWM_0"/>
+    <symbolicName propertyId="pa00.symbolic_name" value="Mosfet0"/>
+    <symbolicName propertyId="pa01.symbolic_name" value="Mosfet2"/>
+    <symbolicName propertyId="pa03.symbolic_name" value="Mosfet5"/>
+    <symbolicName propertyId="pa04.symbolic_name" value="Drive1_I1"/>
+    <symbolicName propertyId="pa05.symbolic_name" value="Mosfet1"/>
     <symbolicName propertyId="pa07.symbolic_name" value="PWM_3"/>
     <symbolicName propertyId="pb02.symbolic_name" value="LED_2"/>
     <symbolicName propertyId="pb03.symbolic_name" value="WhatchdogPulse"/>
@@ -621,6 +634,14 @@
       <configSetting altId="p503.gpio_mode.gpio_mode_peripheral" configurationId="p503.gpio_mode"/>
       <configSetting altId="p504.sdhi1.sd1wp" configurationId="p504"/>
       <configSetting altId="p504.gpio_mode.gpio_mode_peripheral" configurationId="p504.gpio_mode"/>
+      <configSetting altId="p506.input" configurationId="p506"/>
+      <configSetting altId="p506.gpio_mode.gpio_mode_in" configurationId="p506.gpio_mode"/>
+      <configSetting altId="p507.input" configurationId="p507"/>
+      <configSetting altId="p507.gpio_mode.gpio_mode_in" configurationId="p507.gpio_mode"/>
+      <configSetting altId="p508.input" configurationId="p508"/>
+      <configSetting altId="p508.gpio_mode.gpio_mode_in" configurationId="p508.gpio_mode"/>
+      <configSetting altId="p510.input" configurationId="p510"/>
+      <configSetting altId="p510.gpio_mode.gpio_mode_in" configurationId="p510.gpio_mode"/>
       <configSetting altId="p511.irq15.irq15" configurationId="p511"/>
       <configSetting altId="p511.gpio_speed.gpio_speed_m" configurationId="p511.gpio_drivecapacity"/>
       <configSetting altId="p511.gpio_irq.gpio_irq_enabled" configurationId="p511.gpio_irq"/>
@@ -643,6 +664,8 @@
       <configSetting altId="p602.gpio_mode.gpio_mode_peripheral" configurationId="p602.gpio_mode"/>
       <configSetting altId="p603.sci0.txd0" configurationId="p603"/>
       <configSetting altId="p603.gpio_mode.gpio_mode_peripheral" configurationId="p603.gpio_mode"/>
+      <configSetting altId="p606.input" configurationId="p606"/>
+      <configSetting altId="p606.gpio_mode.gpio_mode_in" configurationId="p606.gpio_mode"/>
       <configSetting altId="p607.input" configurationId="p607"/>
       <configSetting altId="p607.gpio_mode.gpio_mode_in" configurationId="p607.gpio_mode"/>
       <configSetting altId="p611.cac.cacref" configurationId="p611"/>
@@ -748,6 +771,10 @@
       <configSetting altId="pa01.gpio_mode.gpio_mode_in" configurationId="pa01.gpio_mode"/>
       <configSetting altId="pa02.sci2.rxd2" configurationId="pa02"/>
       <configSetting altId="pa02.gpio_mode.gpio_mode_peripheral" configurationId="pa02.gpio_mode"/>
+      <configSetting altId="pa03.input" configurationId="pa03"/>
+      <configSetting altId="pa03.gpio_mode.gpio_mode_in" configurationId="pa03.gpio_mode"/>
+      <configSetting altId="pa04.input" configurationId="pa04"/>
+      <configSetting altId="pa04.gpio_mode.gpio_mode_in" configurationId="pa04.gpio_mode"/>
       <configSetting altId="pa05.input" configurationId="pa05"/>
       <configSetting altId="pa05.gpio_mode.gpio_mode_in" configurationId="pa05.gpio_mode"/>
       <configSetting altId="pa07.gpt7.gtioc7a" configurationId="pa07"/>
