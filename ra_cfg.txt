@@ -83,8 +83,8 @@ FSP Configuration
     
   RA8M1 event data
   RA Common
-    Main stack size (bytes): 0x400
-    Heap size (bytes): 0
+    Main stack size (bytes): 0x1688
+    Heap size (bytes): 0x6000
     MCU Vcc (mV): 3300
     Parameter checking: Disabled
     Assert Failures: Return FSP_ERR_ASSERTION
@@ -264,7 +264,7 @@ FSP Configuration
       P710 E14 - - - - Disabled - - "BUS: CS5#; CEU: VIO_VD; SCI4: CTS4" - None - - 
       P711 F10 GPIO LED_7 L - "Output mode (Initial High)" - - "AGT0: AGTEE0" - IO - - 
       P712 E12 GPIO LED_6 L - "Output mode (Initial High)" - - "AGT0: AGTOB0; GPT2: GTIOC2B" - IO - - 
-      P713 G11 GPIO LED_5 - - "Input mode" - - "AGT0: AGTOA0; GPT2: GTIOC2A" - IO - - 
+      P713 G11 GPIO LED_5 L - "Output mode (Initial High)" - - "AGT0: AGTOA0; GPT2: GTIOC2A" - IO - - 
       P714 G10 SCI4_TXD4 - L - "Peripheral mode" - - "SCI4: TXD4" - O - - 
       P715 F11 SCI4_RXD4 - L - "Peripheral mode" - - "SCI4: RXD4" - I - - 
       P800 M3 OSPI_OM_SIO5 - HH None "Peripheral mode" - - "AGT0: AGTOA0; GPT11: GTIOC11A; GPT_OPS: GTIU; IRQ11: IRQ11; OSPI: OM_SIO5; SCI2: CTS2" - O - - 
@@ -280,7 +280,7 @@ FSP Configuration
       P810 P4 SDHI1_SD1CLK - L - "Peripheral mode" - - "SDHI1: SD1CLK; ULPT0: ULPTOA0" - IO - - 
       P811 M6 SDHI1_SD1CMD - L - "Peripheral mode" - - "SDHI1: SD1CMD; ULPT0: ULPTOB0; USB FS: USB_ID" - IO - - 
       P812 R4 SDHI1_SD1DAT0 - L - "Peripheral mode" - - "ADC1: AN122; SDHI1: SD1DAT0; USB FS: USB_EXICEN" - IO - - 
-      P813 J5 GPIO Mosfet4 - - "Input mode" - - "BUS: D20; SDRAM: DQ20" - IO - - 
+      P813 J5 GPIO Mosfet4 L - "Output mode (Initial Low)" - - "BUS: D20; SDRAM: DQ20" - IO - - 
       P814 A14 "USB FS_USB_DP" - L - "Peripheral mode" - - "CANFD0: CRX0; GPT8: GTIOC8B; USB FS: USB_DP" - IO - - 
       P815 B14 "USB FS_USB_DM" - L - "Peripheral mode" - - "CANFD0: CTX0; GPT8: GTIOC8A; USB FS: USB_DM" - IO - - 
       P900 C10 GPIO Drive0_I0 L - "Output mode (Initial Low)" - - "SCI3: TXD3" - IO - - 
@@ -299,12 +299,12 @@ FSP Configuration
       P913 E8 - - - - Disabled - - "CLKOUT: CLKOUT" - None - - 
       P914 F6 GPT5_GTIOC5B PWM_0 L - "Peripheral mode" - - "GPT5: GTIOC5B" - IO - - 
       P915 C5 - - - - Disabled - - "GPT5: GTIOC5A" - None - - 
-      PA00 H4 GPIO Mosfet0 - - "Input mode" - - "BUS: D7; SDRAM: DQ7" - IO - - 
-      PA01 H3 GPIO Mosfet2 - - "Input mode" - - "BUS: RD" - IO - - 
+      PA00 H4 GPIO Mosfet0 L - "Output mode (Initial Low)" - - "BUS: D7; SDRAM: DQ7" - IO - - 
+      PA01 H3 GPIO Mosfet2 L - "Output mode (Initial Low)" - - "BUS: RD" - IO - - 
       PA02 K6 SCI2_RXD2 - L - "Peripheral mode" - - "BUS: D26; SCI2: RXD2; SDRAM: DQ26" - I - - 
-      PA03 G4 GPIO Mosfet5 - - "Input mode" - - "BUS: D25; SCI2: TXD2; SDRAM: DQ25" - IO - - 
+      PA03 G4 GPIO Mosfet5 L - "Output mode (Initial Low)" - - "BUS: D25; SCI2: TXD2; SDRAM: DQ25" - IO - - 
       PA04 L6 GPIO Drive1_I1 - - "Input mode" - - "BUS: D24; SCI2: DE2; SCI2: SCK2; SDRAM: DQ24" - IO - - 
-      PA05 H5 GPIO Mosfet1 - - "Input mode" - - "BUS: D23; SCI2: CTS_RTS2; SCI2: DE2; SDRAM: DQ23" - IO - - 
+      PA05 H5 GPIO Mosfet1 L - "Output mode (Initial Low)" - - "BUS: D23; SCI2: CTS_RTS2; SCI2: DE2; SDRAM: DQ23" - IO - - 
       PA06 L5 - - - - Disabled - - "BUS: D22; GPT7: GTIOC7B; SCI2: CTS2; SDRAM: DQ22" - None - - 
       PA07 G5 GPT7_GTIOC7A PWM_3 L - "Peripheral mode" - - "BUS: D21; GPT7: GTIOC7A; SDRAM: DQ21" - IO - - 
       PA08 G3 - - - - Disabled - - "BUS: D15; GPT_POEGD: GTETRGD; IRQ6: IRQ6; SDRAM: DQ15" - None - - 
@@ -318,7 +318,7 @@ FSP Configuration
       PB00 L14 - - - - Disabled - - "SCI1: DE1; SCI1: SCK1; USB HS: USBHS_VBUSEN" - None - - 
       PB01 L15 - - - - Disabled - - "BUS: ALE; CEU: VIO_D11; SCI1: CTS_RTS1; SCI1: DE1; USB HS: USBHS_VBUS" - None - - 
       PB02 J10 GPIO LED_2 L - "Output mode (Initial High)" - - - - IO - - 
-      PB03 M15 GPIO WhatchdogPulse - - "Input mode" - - - - IO - - 
+      PB03 M15 GPIO WhatchdogPulse L - "Output mode (Initial Low)" - - - - IO - - 
       PB04 H10 GPIO LED_0 L - "Output mode (Initial High)" - - - - IO - - 
       PB05 H11 GPIO LED_1 L - "Output mode (Initial High)" - - - - IO - - 
       PB06 J11 GPIO LED_3 L - "Output mode (Initial High)" - - "GPT9: GTIOC9A" - IO - - 
@@ -424,9 +424,9 @@ FSP Configuration
       Pin Configuration Name: g_bsp_pin_cfg
       
     Instance "Azure RTOS ThreadX Port (rm_threadx_port)"
-  Thread "New Thread"
-    Symbol: new_thread0
-    Name: New Thread
+  Thread "KickStart_Rainbow"
+    Symbol: kickstart_rainbow
+    Name: KickStart_Rainbow
     Stack size (bytes): 1024
     Priority: 1
     Auto start: Enabled

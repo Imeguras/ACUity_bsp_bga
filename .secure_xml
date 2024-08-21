@@ -174,22 +174,22 @@
       <configSetting altId="p607.input" configurationId="p607"/>
       <configSetting altId="p711.output.high" configurationId="p711"/>
       <configSetting altId="p712.output.high" configurationId="p712"/>
-      <configSetting altId="p713.input" configurationId="p713"/>
+      <configSetting altId="p713.output.high" configurationId="p713"/>
       <configSetting altId="p807.input" configurationId="p807"/>
-      <configSetting altId="p813.input" configurationId="p813"/>
+      <configSetting altId="p813.output.low" configurationId="p813"/>
       <configSetting altId="p900.output.low" configurationId="p900"/>
       <configSetting altId="p901.output.low" configurationId="p901"/>
       <configSetting altId="p902.output.low" configurationId="p902"/>
       <configSetting altId="p903.output.low" configurationId="p903"/>
       <configSetting altId="p904.input" configurationId="p904"/>
       <configSetting altId="p910.input" configurationId="p910"/>
-      <configSetting altId="pa00.input" configurationId="pa00"/>
-      <configSetting altId="pa01.input" configurationId="pa01"/>
-      <configSetting altId="pa03.input" configurationId="pa03"/>
+      <configSetting altId="pa00.output.low" configurationId="pa00"/>
+      <configSetting altId="pa01.output.low" configurationId="pa01"/>
+      <configSetting altId="pa03.output.low" configurationId="pa03"/>
       <configSetting altId="pa04.input" configurationId="pa04"/>
-      <configSetting altId="pa05.input" configurationId="pa05"/>
+      <configSetting altId="pa05.output.low" configurationId="pa05"/>
       <configSetting altId="pb02.output.high" configurationId="pb02"/>
-      <configSetting altId="pb03.input" configurationId="pb03"/>
+      <configSetting altId="pb03.output.low" configurationId="pb03"/>
       <configSetting altId="pb04.output.high" configurationId="pb04"/>
       <configSetting altId="pb05.output.high" configurationId="pb05"/>
       <configSetting altId="pb06.output.high" configurationId="pb06"/>

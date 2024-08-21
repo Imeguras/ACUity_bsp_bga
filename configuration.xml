@@ -117,8 +117,8 @@
       <property id="config.bsp.fsp.dcache" value="config.bsp.fsp.dcache.disabled"/>
     </config>
     <config id="config.bsp.ra">
-      <property id="config.bsp.common.main" value="0x400"/>
-      <property id="config.bsp.common.heap" value="0"/>
+      <property id="config.bsp.common.main" value="0x1688"/>
+      <property id="config.bsp.common.heap" value="0x6000"/>
       <property id="config.bsp.common.vcc" value="3300"/>
       <property id="config.bsp.common.checking" value="config.bsp.common.checking.disabled"/>
       <property id="config.bsp.common.assert" value="config.bsp.common.assert.none"/>
@@ -266,9 +266,9 @@
       <stack module="module.driver.ioport_on_ioport.0"/>
       <stack module="module.middleware.rm_threadx_port.0"/>
     </context>
-    <context id="rtos.threadx.thread.546345196">
-      <property id="_symbol" value="new_thread0"/>
-      <property id="rtos.threadx.thread.name" value="New Thread"/>
+    <context id="rtos.threadx.thread.1371218622">
+      <property id="_symbol" value="kickstart_rainbow"/>
+      <property id="rtos.threadx.thread.name" value="KickStart_Rainbow"/>
       <property id="rtos.threadx.thread.stack" value="1024"/>
       <property id="rtos.threadx.thread.priority" value="1"/>
       <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
@@ -692,8 +692,8 @@
       <configSetting altId="p711.gpio_mode.gpio_mode_out.high" configurationId="p711.gpio_mode"/>
       <configSetting altId="p712.output.high" configurationId="p712"/>
       <configSetting altId="p712.gpio_mode.gpio_mode_out.high" configurationId="p712.gpio_mode"/>
-      <configSetting altId="p713.input" configurationId="p713"/>
-      <configSetting altId="p713.gpio_mode.gpio_mode_in" configurationId="p713.gpio_mode"/>
+      <configSetting altId="p713.output.high" configurationId="p713"/>
+      <configSetting altId="p713.gpio_mode.gpio_mode_out.high" configurationId="p713.gpio_mode"/>
       <configSetting altId="p714.sci4.txd4" configurationId="p714"/>
       <configSetting altId="p714.gpio_mode.gpio_mode_peripheral" configurationId="p714.gpio_mode"/>
       <configSetting altId="p715.sci4.rxd4" configurationId="p715"/>
@@ -731,8 +731,8 @@
       <configSetting altId="p811.gpio_mode.gpio_mode_peripheral" configurationId="p811.gpio_mode"/>
       <configSetting altId="p812.sdhi1.sd1dat0" configurationId="p812"/>
       <configSetting altId="p812.gpio_mode.gpio_mode_peripheral" configurationId="p812.gpio_mode"/>
-      <configSetting altId="p813.input" configurationId="p813"/>
-      <configSetting altId="p813.gpio_mode.gpio_mode_in" configurationId="p813.gpio_mode"/>
+      <configSetting altId="p813.output.low" configurationId="p813"/>
+      <configSetting altId="p813.gpio_mode.gpio_mode_out.low" configurationId="p813.gpio_mode"/>
       <configSetting altId="p814.usbfs.usb_dp" configurationId="p814"/>
       <configSetting altId="p814.gpio_mode.gpio_mode_peripheral" configurationId="p814.gpio_mode"/>
       <configSetting altId="p815.usbfs.usb_dm" configurationId="p815"/>
@@ -763,18 +763,18 @@
       <configSetting altId="p912.gpio_mode.gpio_mode_peripheral" configurationId="p912.gpio_mode"/>
       <configSetting altId="p914.gpt5.gtioc5b" configurationId="p914"/>
       <configSetting altId="p914.gpio_mode.gpio_mode_peripheral" configurationId="p914.gpio_mode"/>
-      <configSetting altId="pa00.input" configurationId="pa00"/>
-      <configSetting altId="pa00.gpio_mode.gpio_mode_in" configurationId="pa00.gpio_mode"/>
-      <configSetting altId="pa01.input" configurationId="pa01"/>
-      <configSetting altId="pa01.gpio_mode.gpio_mode_in" configurationId="pa01.gpio_mode"/>
+      <configSetting altId="pa00.output.low" configurationId="pa00"/>
+      <configSetting altId="pa00.gpio_mode.gpio_mode_out.low" configurationId="pa00.gpio_mode"/>
+      <configSetting altId="pa01.output.low" configurationId="pa01"/>
+      <configSetting altId="pa01.gpio_mode.gpio_mode_out.low" configurationId="pa01.gpio_mode"/>
       <configSetting altId="pa02.sci2.rxd2" configurationId="pa02"/>
       <configSetting altId="pa02.gpio_mode.gpio_mode_peripheral" configurationId="pa02.gpio_mode"/>
-      <configSetting altId="pa03.input" configurationId="pa03"/>
-      <configSetting altId="pa03.gpio_mode.gpio_mode_in" configurationId="pa03.gpio_mode"/>
+      <configSetting altId="pa03.output.low" configurationId="pa03"/>
+      <configSetting altId="pa03.gpio_mode.gpio_mode_out.low" configurationId="pa03.gpio_mode"/>
       <configSetting altId="pa04.input" configurationId="pa04"/>
       <configSetting altId="pa04.gpio_mode.gpio_mode_in" configurationId="pa04.gpio_mode"/>
-      <configSetting altId="pa05.input" configurationId="pa05"/>
-      <configSetting altId="pa05.gpio_mode.gpio_mode_in" configurationId="pa05.gpio_mode"/>
+      <configSetting altId="pa05.output.low" configurationId="pa05"/>
+      <configSetting altId="pa05.gpio_mode.gpio_mode_out.low" configurationId="pa05.gpio_mode"/>
       <configSetting altId="pa07.gpt7.gtioc7a" configurationId="pa07"/>
       <configSetting altId="pa07.gpio_mode.gpio_mode_peripheral" configurationId="pa07.gpio_mode"/>
       <configSetting altId="pa14.sci9.txd9" configurationId="pa14"/>
@@ -783,8 +783,8 @@
       <configSetting altId="pa15.gpio_mode.gpio_mode_peripheral" configurationId="pa15.gpio_mode"/>
       <configSetting altId="pb02.output.high" configurationId="pb02"/>
       <configSetting altId="pb02.gpio_mode.gpio_mode_out.high" configurationId="pb02.gpio_mode"/>
-      <configSetting altId="pb03.input" configurationId="pb03"/>
-      <configSetting altId="pb03.gpio_mode.gpio_mode_in" configurationId="pb03.gpio_mode"/>
+      <configSetting altId="pb03.output.low" configurationId="pb03"/>
+      <configSetting altId="pb03.gpio_mode.gpio_mode_out.low" configurationId="pb03.gpio_mode"/>
       <configSetting altId="pb04.output.high" configurationId="pb04"/>
       <configSetting altId="pb04.gpio_mode.gpio_mode_out.high" configurationId="pb04.gpio_mode"/>
       <configSetting altId="pb05.output.high" configurationId="pb05"/>
