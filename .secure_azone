@@ -73,8 +73,6 @@
             <slot name="P406" secure="true"/>
             <slot name="P407" secure="true"/>
             <slot name="P409" secure="true"/>
-            <slot name="P410" secure="true"/>
-            <slot name="P411" secure="true"/>
             <slot name="P412" secure="true"/>
             <slot name="P414" secure="true"/>
             <slot name="P415" secure="true"/>
@@ -101,8 +99,6 @@
             <slot name="P701" secure="true"/>
             <slot name="P702" secure="true"/>
             <slot name="P703" secure="true"/>
-            <slot name="P706" secure="true"/>
-            <slot name="P707" secure="true"/>
             <slot name="P708" secure="true"/>
             <slot name="P709" secure="true"/>
         </peripheral>
@@ -133,10 +129,5 @@
             <slot name="PA00" secure="true"/>
             <slot name="PA01" secure="true"/>
         </peripheral>
-        <peripheral name="PORTB" group="PORT">
-            <slot name="PB00" secure="true"/>
-            <slot name="PB01" secure="true"/>
-        </peripheral>
-        <peripheral name="ADC0" group="ADC" security=""/>
     </partition>
 </azone>

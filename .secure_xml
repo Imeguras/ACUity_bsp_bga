@@ -98,10 +98,10 @@
       <configSetting altId="acmphs1.ivcmp1_2.p000" configurationId="acmphs1.ivcmp1_2"/>
       <configSetting altId="acmphs1.ivcmp1_3.p002" configurationId="acmphs1.ivcmp1_3"/>
       <configSetting altId="acmphs1.ivref_1.p003" configurationId="acmphs1.ivref_1"/>
-      <configSetting altId="adc0.an001.p005" configurationId="adc0.an001" isUsedByDriver="true"/>
-      <configSetting altId="adc0.an004.p007" configurationId="adc0.an004" isUsedByDriver="true"/>
-      <configSetting altId="adc0.an006.p009" configurationId="adc0.an006" isUsedByDriver="true"/>
-      <configSetting altId="adc0.an008.p008" configurationId="adc0.an008" isUsedByDriver="true"/>
+      <configSetting altId="adc0.an001.p005" configurationId="adc0.an001"/>
+      <configSetting altId="adc0.an004.p007" configurationId="adc0.an004"/>
+      <configSetting altId="adc0.an006.p009" configurationId="adc0.an006"/>
+      <configSetting altId="adc0.an008.p008" configurationId="adc0.an008"/>
       <configSetting altId="adc1.an105.p015" configurationId="adc1.an105"/>
       <configSetting altId="adc1.an106.p011" configurationId="adc1.an106"/>
       <configSetting altId="adc1.an117.p805" configurationId="adc1.an117"/>
@@ -172,8 +172,8 @@
       <configSetting altId="p515.input" configurationId="p515"/>
       <configSetting altId="p606.input" configurationId="p606"/>
       <configSetting altId="p607.input" configurationId="p607"/>
-      <configSetting altId="p711.input" configurationId="p711"/>
-      <configSetting altId="p712.input" configurationId="p712"/>
+      <configSetting altId="p711.output.high" configurationId="p711"/>
+      <configSetting altId="p712.output.high" configurationId="p712"/>
       <configSetting altId="p713.input" configurationId="p713"/>
       <configSetting altId="p807.input" configurationId="p807"/>
       <configSetting altId="p813.input" configurationId="p813"/>
@@ -188,12 +188,12 @@
       <configSetting altId="pa03.input" configurationId="pa03"/>
       <configSetting altId="pa04.input" configurationId="pa04"/>
       <configSetting altId="pa05.input" configurationId="pa05"/>
-      <configSetting altId="pb02.input" configurationId="pb02"/>
+      <configSetting altId="pb02.output.high" configurationId="pb02"/>
       <configSetting altId="pb03.input" configurationId="pb03"/>
-      <configSetting altId="pb04.input" configurationId="pb04"/>
-      <configSetting altId="pb05.input" configurationId="pb05"/>
-      <configSetting altId="pb06.input" configurationId="pb06"/>
-      <configSetting altId="pb07.input" configurationId="pb07"/>
+      <configSetting altId="pb04.output.high" configurationId="pb04"/>
+      <configSetting altId="pb05.output.high" configurationId="pb05"/>
+      <configSetting altId="pb06.output.high" configurationId="pb06"/>
+      <configSetting altId="pb07.output.high" configurationId="pb07"/>
       <configSetting altId="rtc.rtcic0.p402" configurationId="rtc.rtcic0"/>
       <configSetting altId="rtc.rtcic1.p403" configurationId="rtc.rtcic1"/>
       <configSetting altId="rtc.rtcic2.p404" configurationId="rtc.rtcic2"/>
@@ -231,13 +231,7 @@
       <configSetting altId="usbfs.usb_dp.p814" configurationId="usbfs.usb_dp"/>
       <configSetting altId="usbfs.usb_id.p906" configurationId="usbfs.usb_id"/>
       <configSetting altId="usbhs.usbhs_exicen.p412" configurationId="usbhs.usbhs_exicen"/>
-      <configSetting altId="usbhs.usbhs_id.p411" configurationId="usbhs.usbhs_id"/>
       <configSetting altId="usbhs.usbhs_ovrcura.p409" configurationId="usbhs.usbhs_ovrcura"/>
-      <configSetting altId="usbhs.usbhs_ovrcura_a_dash_ds.p707" configurationId="usbhs.usbhs_ovrcura_a_dash_ds"/>
-      <configSetting altId="usbhs.usbhs_ovrcurb.p410" configurationId="usbhs.usbhs_ovrcurb"/>
-      <configSetting altId="usbhs.usbhs_ovrcurb_a_dash_ds.p706" configurationId="usbhs.usbhs_ovrcurb_a_dash_ds"/>
-      <configSetting altId="usbhs.usbhs_vbus.pb01" configurationId="usbhs.usbhs_vbus"/>
-      <configSetting altId="usbhs.usbhs_vbusen.pb00" configurationId="usbhs.usbhs_vbusen"/>
     </pincfg>
   </raPinConfiguration>
 </raConfiguration>

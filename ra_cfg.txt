@@ -144,7 +144,7 @@ FSP Configuration
     OCTASPICLK Div /4
     
   Pin Configurations
-    R7FA8M1AHECBD.pincfg -> g_bsp_pin_cfg
+    ACUITY_BOARD.pincfg -> g_bsp_pin_cfg
       AVCC0 N8 SYSTEM_AVCC0 - - - - - - - - IO "Read only" - 
       AVCC_USBHS H13 SYSTEM_AVCC_USBHS - - - - - - - - IO "Read only" - 
       AVSS0 N9 SYSTEM_AVSS0 - - - - - - - - IO "Read only" - 
@@ -195,8 +195,8 @@ FSP Configuration
       P304 A3 ETHER_RMII_RMII0_TXD0 - H None "Peripheral mode" - - "BUS: A5; ETHER_MII: ET0_ETXD1; ETHER_RMII: RMII0_TXD0; GPT7: GTIOC7A; GPT_OPS: GTOVLO; IRQ9: IRQ9; SDHI0: SD0DAT0; SDRAM: A5; TRACE: TDATA3; ULPT1: ULPTO1" - IO - - 
       P305 B4 ETHER_RMII_RMII0_TXD1 - H None "Peripheral mode" - - "BUS: A6; ETHER_MII: ET0_RX_ER; ETHER_RMII: RMII0_TXD1; GPT_OPS: GTOVUP; IRQ8: IRQ8; SDHI0: SD0WP; SDRAM: A6; TRACE: TDATA2; ULPT1: ULPTEE1" - IO - - 
       P306 A4 ETHER_RMII_RMII0_TXD_EN - H - "Peripheral mode" - - "BUS: A7; ETHER_MII: ET0_TX_EN; ETHER_RMII: RMII0_TXD_EN; GPT_OPS: GTIW; SDHI0: SD0CD; SDRAM: A7; TRACE: TDATA1; ULPT1: ULPTEVI1" - IO - - 
-      P307 B5 ETHER_RMII_ET0_MDIO - M - "Peripheral mode" - - "BUS: A8; ETHER_MII: ET0_MDIO; ETHER_RMII: ET0_MDIO; GPT_OPS: GTIV; SDHI0: SD0CMD; SDRAM: A8; TRACE: TDATA0; ULPT1: ULPTOA1" - IO - - 
-      P308 A5 ETHER_RMII_ET0_MDC - M - "Peripheral mode" - - "BUS: A9; ETHER_MII: ET0_MDC; ETHER_RMII: ET0_MDC; GPT_OPS: GTIU; SCI9: CTS9; SDHI0: SD0CLK; SDRAM: A9; TRACE: TCLK; ULPT1: ULPTOB1" - IO - - 
+      P307 B5 ETHER_RMII_ET0_MDIO - H - "Peripheral mode" - - "BUS: A8; ETHER_MII: ET0_MDIO; ETHER_RMII: ET0_MDIO; GPT_OPS: GTIV; SDHI0: SD0CMD; SDRAM: A8; TRACE: TDATA0; ULPT1: ULPTOA1" - IO - - 
+      P308 A5 ETHER_RMII_ET0_MDC - H - "Peripheral mode" - - "BUS: A9; ETHER_MII: ET0_MDC; ETHER_RMII: ET0_MDC; GPT_OPS: GTIU; SCI9: CTS9; SDHI0: SD0CLK; SDRAM: A9; TRACE: TCLK; ULPT1: ULPTOB1" - IO - - 
       P309 C6 SCI3_RXD3 - L - "Peripheral mode" - - "BUS: A10; ETHER_MII: ET0_ETXD3; SCI3: RXD3; SDRAM: A10" - I - - 
       P310 D6 SCI3_TXD3 - L - "Peripheral mode" - - "AGT1: AGTEE1; BUS: A11; ETHER_MII: ET0_ETXD2; SCI3: TXD3; SDRAM: A11" - O - - 
       P311 B6 SCI3_SCK3 - L - "Peripheral mode" - - "AGT1: AGTOB1; BUS: A12; CANFD0: CRX0; ETHER_MII: ET0_TX_ER; GPT_OPS: GTADSM1; SCI3: DE3; SCI3: SCK3; SDRAM: A12" - IO - - 
@@ -214,8 +214,8 @@ FSP Configuration
       P407 D12 RTC_RTCOUT - M - "Peripheral mode" - - "ADC(Digital): ADTRG0; AGT0: AGTIO0; BUS: CS6#; GPT10: GTIOC10B; IIC0: SDA0; RTC: RTCOUT; SCI4: CTS_RTS4; SCI4: DE4; SPI0: SSLA3; USB FS: USB_VBUS" - O - - 
       P408 B15 - - - - Disabled - - "BUS: A17; GPT10: GTIOC10A; GPT_OPS: GTOWLO; IIC0: SCL0; IRQ7: IRQ7; SCI3: RXD3; SCI4: CTS4; ULPT0: ULPTOB0; USB FS: USB_VBUSEN; USB HS: USBHS_VBUSEN" - None - - 
       P409 E11 "USB HS_USBHS_OVRCURA" - M None "Peripheral mode" - - "BUS: A18; GPT_OPS: GTOWUP; IIC0: SDA0; IRQ6: IRQ6; SCI3: TXD3; ULPT0: ULPTOA0; USB FS: USB_OVRCURA_A-DS; USB HS: USBHS_OVRCURA" - IO - - 
-      P410 D14 "USB HS_USBHS_OVRCURB" - M None "Peripheral mode" - - "AGT1: AGTOB1; BUS: A19; GPT9: GTIOC9B; GPT_OPS: GTOVLO; IIC0: SCL0; IRQ5: IRQ5; SCI3: DE3; SCI3: SCK3; SDHI0: SD0DAT1; SPI1: MISO1; USB FS: USB_OVRCURB_A-DS; USB HS: USBHS_OVRCURB" - IO - - 
-      P411 D13 "USB HS_USBHS_ID" - L None "Peripheral mode" - - "AGT1: AGTOA1; BUS: A20; GPT9: GTIOC9A; GPT_OPS: GTOVUP; IRQ4: IRQ4; SCI3: CTS_RTS3; SCI3: DE3; SDHI0: SD0DAT0; SPI1: MOSI1; USB FS: USB_ID; USB HS: USBHS_ID" - IO - - 
+      P410 D14 - - - - Disabled - - "AGT1: AGTOB1; BUS: A19; GPT9: GTIOC9B; GPT_OPS: GTOVLO; IIC0: SCL0; IRQ5: IRQ5; SCI3: DE3; SCI3: SCK3; SDHI0: SD0DAT1; SPI1: MISO1; USB FS: USB_OVRCURB_A-DS; USB HS: USBHS_OVRCURB" - None - - 
+      P411 D13 - - - - Disabled - - "AGT1: AGTOA1; BUS: A20; GPT9: GTIOC9A; GPT_OPS: GTOVUP; IRQ4: IRQ4; SCI3: CTS_RTS3; SCI3: DE3; SDHI0: SD0DAT0; SPI1: MOSI1; USB FS: USB_ID; USB HS: USBHS_ID" - None - - 
       P412 C15 "USB HS_USBHS_EXICEN" - L - "Peripheral mode" - - "AGT1: AGTEE1; BUS: A21; GPT_OPS: GTOULO; SCI3: CTS3; SDHI0: SD0CMD; SPI1: RSPCK1; USB FS: USB_EXICEN; USB HS: USBHS_EXICEN" - IO - - 
       P413 A15 - - - - Disabled - - "BUS: A22; GPT_OPS: GTOUUP; SDHI0: SD0CLK; SPI1: SSLB0; ULPT1: ULPTEE1" - None - - 
       P414 D15 CANFD1_CRX1 - L None "Peripheral mode" - - "BUS: A23; CANFD1: CRX1; CEU: VIO_D13; GPT0: GTIOC0B; GPT_OPS: GTADSM1; IRQ9: IRQ9; SCI4: RXD4; SDHI0: SD0WP; SPI1: SSLB1" - IO - - 
@@ -257,13 +257,13 @@ FSP Configuration
       P703 L11 SPI0_SSLA0 - M - "Peripheral mode" - - "AGT1: AGTO1; CEU: VIO_D7; CLKOUT: VCOUT; ETHER_MII: ET0_ERXD0; ETHER_RMII: RMII0_RXD1; GPT6: GTIOC6B; SDHI1: SD1DAT6; SPI0: SSLA0" - IO - - 
       P704 K12 - - - - Disabled - - "AGT0: AGTO0; CANFD0: CTX0; CEU: VIO_D8; ETHER_MII: ET0_RX_CLK; ETHER_RMII: RMII0_RX_ER; GPT_OPS: GTADSM0; SDHI1: SD1DAT7; SPI0: SSLA1" - None - - 
       P705 K10 - - - - Disabled - - "AGT0: AGTIO0; CANFD0: CRX0; CEU: VIO_D9; ETHER_MII: ET0_CRS; ETHER_RMII: RMII0_CRS_DV; GPT_OPS: GTADSM1; SCI1: CTS1; SPI0: SSLA2" - None - - 
-      P706 K13 "USB HS_USBHS_OVRCURB_A-DS" - L None "Peripheral mode" - - "AGT0: AGTIO0; CEU: VIO_D10; IRQ7: IRQ7; SCI1: RXD1; USB HS: USBHS_OVRCURB_A-DS" - IO - - 
-      P707 K11 "USB HS_USBHS_OVRCURA_A-DS" - L None "Peripheral mode" - - "IRQ8: IRQ8; SCI1: TXD1; USB HS: USBHS_OVRCURA_A-DS" - IO - - 
+      P706 K13 - - - - Disabled - - "AGT0: AGTIO0; CEU: VIO_D10; IRQ7: IRQ7; SCI1: RXD1; USB HS: USBHS_OVRCURB_A-DS" - None - - 
+      P707 K11 - - - - Disabled - - "IRQ8: IRQ8; SCI1: TXD1; USB HS: USBHS_OVRCURA_A-DS" - None - - 
       P708 E13 SSIE_AUDIO_CLK - L None "Peripheral mode" - - "BUS: BC1; BUS: WR1; CAC: CACREF; CEU: VIO_CLK; IRQ11: IRQ11; SCI4: DE4; SCI4: SCK4; SPI1: SSLB3; SSIE: AUDIO_CLK" - IO - - 
       P709 E15 IRQ10_IRQ10 IRQ1 - IRQ10 "IRQ mode" - - "BUS: CS4#; CEU: VIO_HD; IRQ10: IRQ10; SCI4: CTS_RTS4; SCI4: DE4" - IO - - 
       P710 E14 - - - - Disabled - - "BUS: CS5#; CEU: VIO_VD; SCI4: CTS4" - None - - 
-      P711 F10 GPIO LED_7 - - "Input mode" - - "AGT0: AGTEE0" - IO - - 
-      P712 E12 GPIO LED_6 - - "Input mode" - - "AGT0: AGTOB0; GPT2: GTIOC2B" - IO - - 
+      P711 F10 GPIO LED_7 L - "Output mode (Initial High)" - - "AGT0: AGTEE0" - IO - - 
+      P712 E12 GPIO LED_6 L - "Output mode (Initial High)" - - "AGT0: AGTOB0; GPT2: GTIOC2B" - IO - - 
       P713 G11 GPIO LED_5 - - "Input mode" - - "AGT0: AGTOA0; GPT2: GTIOC2A" - IO - - 
       P714 G10 SCI4_TXD4 - L - "Peripheral mode" - - "SCI4: TXD4" - O - - 
       P715 F11 SCI4_RXD4 - L - "Peripheral mode" - - "SCI4: RXD4" - I - - 
@@ -315,14 +315,14 @@ FSP Configuration
       PA13 E5 - - - - Disabled - - "BUS: D17; SDRAM: DQ17" - None - - 
       PA14 C1 SCI9_TXD9 - L - "Peripheral mode" - - "BUS: D18; SCI9: TXD9; SDRAM: DQ18" - O - - 
       PA15 F5 SCI9_RXD9 - L - "Peripheral mode" - - "BUS: D19; SCI9: RXD9; SDRAM: DQ19" - I - - 
-      PB00 L14 "USB HS_USBHS_VBUSEN" - L - "Peripheral mode" - - "SCI1: DE1; SCI1: SCK1; USB HS: USBHS_VBUSEN" - IO - - 
-      PB01 L15 "USB HS_USBHS_VBUS" - L - "Peripheral mode" - - "BUS: ALE; CEU: VIO_D11; SCI1: CTS_RTS1; SCI1: DE1; USB HS: USBHS_VBUS" - IO - - 
-      PB02 J10 GPIO LED_2 - - "Input mode" - - - - IO - - 
+      PB00 L14 - - - - Disabled - - "SCI1: DE1; SCI1: SCK1; USB HS: USBHS_VBUSEN" - None - - 
+      PB01 L15 - - - - Disabled - - "BUS: ALE; CEU: VIO_D11; SCI1: CTS_RTS1; SCI1: DE1; USB HS: USBHS_VBUS" - None - - 
+      PB02 J10 GPIO LED_2 L - "Output mode (Initial High)" - - - - IO - - 
       PB03 M15 GPIO WhatchdogPulse - - "Input mode" - - - - IO - - 
-      PB04 H10 GPIO LED_0 - - "Input mode" - - - - IO - - 
-      PB05 H11 GPIO LED_1 - - "Input mode" - - - - IO - - 
-      PB06 J11 GPIO LED_3 - - "Input mode" - - "GPT9: GTIOC9A" - IO - - 
-      PB07 J12 GPIO LED_4 - - "Input mode" - - "GPT9: GTIOC9B" - IO - - 
+      PB04 H10 GPIO LED_0 L - "Output mode (Initial High)" - - - - IO - - 
+      PB05 H11 GPIO LED_1 L - "Output mode (Initial High)" - - - - IO - - 
+      PB06 J11 GPIO LED_3 L - "Output mode (Initial High)" - - "GPT9: GTIOC9A" - IO - - 
+      PB07 J12 GPIO LED_4 L - "Output mode (Initial High)" - - "GPT9: GTIOC9B" - IO - - 
       RES A9 SYSTEM_RES - - - - - - - - IO "Read only" - 
       USBHS_DM F15 SYSTEM_USBHS_DM - - - - - - - - IO "Read only" - 
       USBHS_DP F14 SYSTEM_USBHS_DP - - - - - - - - IO "Read only" - 
@@ -378,9 +378,6 @@ FSP Configuration
     Parameter Checking: Default (BSP)
     
   Module "Azure RTOS ThreadX Port (rm_threadx_port)"
-  Module "ADC (r_adc)"
-    Parameter Checking: Default (BSP)
-    
   Azure RTOS ThreadX
     General: Custom tx_user.h: 
     General: Error Checking: Enabled
@@ -427,40 +424,11 @@ FSP Configuration
       Pin Configuration Name: g_bsp_pin_cfg
       
     Instance "Azure RTOS ThreadX Port (rm_threadx_port)"
-    Instance "g_adc0 ADC (r_adc)"
-      General: Name: g_adc0
-      General: Unit: 0
-      General: Resolution: 12-Bit
-      General: Alignment: Right
-      General: Clear after read: On
-      General: Mode: Single Scan
-      General: Double-trigger: Disabled
-      Input: Channel Scan Mask (channel availability varies by MCU): 
-      Input: Group B Scan Mask (channel availability varies by MCU): 
-      Interrupts: Normal/Group A Trigger: Software Trigger
-      Interrupts: Group B Trigger: Disabled
-      Interrupts: Group Priority (Valid only in Group Scan Mode): Group A cannot interrupt Group B
-      Input: Add/Average Count: Disabled
-      Input: Reference Voltage control: VREFH0/VREFH
-      Input: Addition/Averaging Mask (channel availability varies by MCU and unit): 
-      Input: Sample and Hold: Sample and Hold Channels (Available only on selected MCUs): 
-      Input: Sample and Hold: Sample Hold States (Applies only to channels 0, 1, 2): 24
-      Input: Window Compare: Window Mode: Disabled
-      Input: Window Compare: Event Output: OR
-      Input: Window Compare: Window A: Enable: Disabled
-      Input: Window Compare: Window A: Channels to compare (channel availability varies by MCU and unit): 
-      Input: Window Compare: Window A: Channel comparison mode (channel availability varies by MCU and unit): 
-      Input: Window Compare: Window A: Lower Reference: 0
-      Input: Window Compare: Window A: Upper Reference: 0
-      Input: Window Compare: Window B: Enable: Disabled
-      Input: Window Compare: Window B: Channel to compare (channel availability varies by MCU and unit): Channel 0
-      Input: Window Compare: Window B: Comparison mode: Less Than or Outside Window
-      Input: Window Compare: Window B: Lower Reference: 0
-      Input: Window Compare: Window B: Upper Reference: 0
-      Interrupts: Callback: NULL
-      Interrupts: Scan End Interrupt Priority: Disabled
-      Interrupts: Scan End Group B Interrupt Priority: Disabled
-      Interrupts: Window Compare A Interrupt Priority: Disabled
-      Interrupts: Window Compare B Interrupt Priority: Disabled
-      Extra: ADC Ring Buffer: Disabled
-      
+  Thread "New Thread"
+    Symbol: new_thread0
+    Name: New Thread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
